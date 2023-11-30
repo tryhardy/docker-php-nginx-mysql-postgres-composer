@@ -2,3 +2,6 @@ logs/nginx/*
 logs/php/*
 mysql/data/*
 postgres/data/*
+*/vendor
+*.lock
+.idea

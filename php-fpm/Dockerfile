@@ -1,4 +1,4 @@
-FROM php:7.4.14-fpm
+FROM php:8.1-fpm
 
 RUN apt-get update && apt-get install -y \
       git \
@@ -15,7 +15,7 @@ WORKDIR /var/www
 
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 # make symfony command available globally
-RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+#RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 
 EXPOSE 9000
 CMD ["php-fpm"]
